@@ -7,5 +7,4 @@ refresh-token:
   public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
 
 
-management.endpoints.web.exposure.include: *
 
