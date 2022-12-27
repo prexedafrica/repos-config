@@ -1,0 +1,53 @@
+access-token:
+  private: ${ACCESS_TOKEN_PRIVATE_KEY_PATH}
+  public: ${ACCESS_TOKEN_PUBLIC_KEY_PATH}
+
+refresh-token:
+  private: ${REFRESH_TOKEN_PRIVATE_KEY_PATH}
+  public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
+
+  profiles:
+    active: dev
+
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/rhumainedb
+    username: postgres
+    password: '#LddndAemadn1879#'
+
+
+  #  mvc:
+  #    path match:
+  #      matching-strategy: ant_path_matcher
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    open-in-view: false
+    hibernate.ddl-auto: update
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: prexedafrica@gmail.com
+    password: 'ygkahcufzuycsgtm'
+    properties:
+      mail:
+        transport.protocol: smtp
+        smtp:
+          auth: true
+          starttls.enable: true
+          timeout: 5000
+          writetimeout: 5000
+          connectiontimeout: 5000
+
+
+
+
+
+    sql:
+    init:
+      platform: postgres
+      mode: always
