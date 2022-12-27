@@ -7,8 +7,24 @@ refresh-token:
   public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
 
 spring:
-    datasource:
-      driver-class-name: org.postgresql.Driver
-      url: jdbc:postgresql://localhost:5432/rhumainedb
-      username: postgres
-      password: '#LddndAemadn1879#'
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/rhumainedb
+    username: postgres
+    password: '#LddndAemadn1879#'
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: prexedafrica@gmail.com
+    password: 'ygkahcufzuycsgtm'
+    properties:
+      mail:
+        transport.protocol: smtp
+        smtp:
+          auth: true
+          starttls.enable: true
+          timeout: 5000
+          writetimeout: 5000
+          connectiontimeout: 5000
