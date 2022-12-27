@@ -1,0 +1,84 @@
+#access-token:
+#  private: ${ACCESS_TOKEN_PRIVATE_KEY_PATH}
+#  public: ${ACCESS_TOKEN_PUBLIC_KEY_PATH}
+#
+#refresh-token:
+#  private: ${REFRESH_TOKEN_PRIVATE_KEY_PATH}
+#  public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
+#
+
+
+server:
+  port: 8082
+  servlet.context-path: '/personne-service'
+
+#management:
+#  health:
+#    livenessState.enabled: true
+#    readinessState.enabled: true
+#  endpoint.health.probes.enabled: true
+
+
+spring:
+  application:
+    name: 'authentification-service'
+
+#  profiles:
+#    active: dev
+
+  config:
+    import: "optional:configserver: http://localhost:8888"
+
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/rhumainedb
+#    username: postgres
+#    password: '#LddndAemadn1879#'
+
+
+  #  mvc:
+  #    path match:
+  #      matching-strategy: ant_path_matcher
+
+#  jpa:
+#    show-sql: true
+#    generate-ddl: true
+#    open-in-view: false
+#    hibernate.ddl-auto: update
+#
+#
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username: prexedafrica@gmail.com
+#    password: 'ygkahcufzuycsgtm'
+#    properties:
+#      mail:
+#        transport.protocol: smtp
+#        smtp:
+#          auth: true
+#          starttls.enable: true
+#          timeout: 5000
+#          writetimeout: 5000
+#          connectiontimeout: 5000
+#
+#
+#
+#
+#
+#    sql:
+#    init:
+#      platform: postgres
+#      mode: always
+#
+#
+#
+#springdoc:
+#  swagger-ui:
+#  path: /swagger-ui/api-docs.html
+#
+#
+#
+#logging:
+#  level:
+#    org.springframework.security: DEBUG
