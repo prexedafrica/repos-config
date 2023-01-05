@@ -13,6 +13,17 @@ refresh-token:
   private: ${REFRESH_TOKEN_PRIVATE_KEY_PATH}
   public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+  health:
+    mail:
+      enabled: false
+
+
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
