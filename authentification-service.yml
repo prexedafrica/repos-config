@@ -32,6 +32,18 @@ spring:
     password: '#LddndAemadn1879#'
 
 
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    #      open-in-view: false
+
+    hibernate:
+      ddl-auto: create
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MariaDB103Dialect
+
   mail:
     host: smtp.gmail.com
     port: 587
