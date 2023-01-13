@@ -1,0 +1,26 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+  health:
+    mail:
+      enabled: false
+
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/succursaledb
+    username: postgres
+    password: '#LddndAemadn1879#'
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    open-in-view: false
+    hibernate.ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
