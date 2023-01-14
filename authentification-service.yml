@@ -19,9 +19,9 @@ management:
       exposure:
         include: '*'
 
-  health:
-    mail:
-      enabled: false
+#  health:
+#    mail:
+#      enabled: false
 
 
 spring:
