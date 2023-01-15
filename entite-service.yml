@@ -13,7 +13,7 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/succursaledb
-    username: postgres
+    username: smartges
     password: '#LddndAemadn1879#'
 
   jpa:
