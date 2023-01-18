@@ -1,10 +1,3 @@
-ACCESS_TOKEN_PRIVATE_KEY_PATH: "access-refresh-token-keys/access-token-private.key"
-ACCESS_TOKEN_PUBLIC_KEY_PATH: "access-refresh-token-keys/access-token-public.key"
-
-REFRESH_TOKEN_PRIVATE_KEY_PATH: "access-refresh-token-keys/refresh-token-private.key"
-REFRESH_TOKEN_PUBLIC_KEY_PATH: "access-refresh-token-keys/refresh-token-public.key"
-
-
 access-token:
   private: ${ACCESS_TOKEN_PRIVATE_KEY_PATH}
   public: ${ACCESS_TOKEN_PUBLIC_KEY_PATH}
@@ -12,6 +5,8 @@ access-token:
 refresh-token:
   private: ${REFRESH_TOKEN_PRIVATE_KEY_PATH}
   public: ${REFRESH_TOKEN_PUBLIC_KEY_PATH}
+
+
 
 management:
   endpoints:
@@ -58,3 +53,17 @@ spring:
           timeout: 5000
           writetimeout: 5000
           connectiontimeout: 5000
+
+
+  sql:
+    init:
+      platform: postgres
+      mode: always
+
+
+
+
+
+  logging:
+    level:
+      org.springframework.security: DEBUG
