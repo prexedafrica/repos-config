@@ -26,6 +26,9 @@ spring:
     username: smartges
     password: '#LddndAemadn1879#'
 
+  profiles:
+    active: dev
+
   jpa:
     show-sql: true
     generate-ddl: true
