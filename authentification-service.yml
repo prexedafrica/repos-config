@@ -14,15 +14,11 @@ refresh-token:
 
 
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-
-#  health:
-#    mail:
-#      enabled: false
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
 
 
 spring:
@@ -31,9 +27,9 @@ spring:
     url: jdbc:postgresql://localhost:5432/rhumainedb
     username: smartges
     password: '#LddndAemadn1879#'
-
-  profiles:
-    active: default
+#
+#  profiles:
+#    active: default
 
   jpa:
     show-sql: true
@@ -62,17 +58,17 @@ spring:
           timeout: 5000
           writetimeout: 5000
           connectiontimeout: 5000
-
-
-  sql:
-    init:
-      platform: postgres
-      mode: always
-
-
-
-
-
-  logging:
-    level:
-      org.springframework.security: DEBUG
+#
+#
+#  sql:
+#    init:
+#      platform: postgres
+#      mode: always
+#
+#
+#
+#
+#
+#  logging:
+#    level:
+#      org.springframework.security: DEBUG
