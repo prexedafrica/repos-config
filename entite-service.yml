@@ -1,13 +1,13 @@
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-
-  health:
-    mail:
-      enabled: false
-
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: '*'
+#
+#  health:
+#    mail:
+#      enabled: false
+#
 
 spring:
   datasource:
@@ -15,6 +15,11 @@ spring:
     url: jdbc:postgresql://localhost:5432/succursaledb
     username: smartges
     password: '#LddndAemadn1879#'
+
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
   jpa:
     show-sql: true
