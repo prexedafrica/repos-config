@@ -48,7 +48,7 @@ spring:
     host: smtp.gmail.com
     port: 587
     username: prexedafrica@gmail.com
-    password: 'ygkahcufzuycsgtm'
+    password: 'nnltchukwygkeftr'
     properties:
       mail:
         transport.protocol: smtp
