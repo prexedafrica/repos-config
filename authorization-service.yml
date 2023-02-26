@@ -1,0 +1,20 @@
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/oauth2db
+    username: smartges
+    password: '#LddndAemadn1879#'
+#
+#  profiles:
+#    active: default
+
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    open-in-view: false
+    hibernate.ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
